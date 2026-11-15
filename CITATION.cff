@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the software and the MuMag2022 paper."
+title: "MuMag2022 Python"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Adams
+    given-names: Michael P.
+    orcid: "https://orcid.org/0000-0001-9269-8087"
+repository-code: "https://github.com/AdamsMP92/MuMag2022_python"
+url: "https://adamsmp92.github.io/MuMag2022_python/"
+license: MIT
+keywords:
+  - small-angle neutron scattering
+  - magnetic SANS
+  - micromagnetics
+  - exchange stiffness
+preferred-citation:
+  type: article
+  title: "MuMag2022: a software tool for analyzing magnetic field dependent unpolarized small-angle neutron scattering data of bulk ferromagnets"
+  authors:
+    - family-names: Adams
+      given-names: Michael P.
+    - family-names: Bersweiler
+      given-names: Mathias
+    - family-names: Jefremovas
+      given-names: Elizabeth M.
+    - family-names: Michels
+      given-names: Andreas
+  journal: Journal of Applied Crystallography
+  volume: 55
+  start: 1055
+  end: 1062
+  year: 2022
+  doi: 10.1107/S1600576722005349

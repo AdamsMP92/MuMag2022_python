@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.coverage
+.DS_Store
+.pixi/
+.venv/
+build/
+dist/
+site/
+*.egg-info/
+examples/output/
+*.png
