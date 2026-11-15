@@ -147,7 +147,38 @@ a { color: var(--teal); }
   font-weight: 700;
 }
 .section-label { font-size: .84rem; font-weight: 700; }
-.input-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.input-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* Shiny assigns input containers a fixed 300 px width by default. That width
+   overflows the two-column grids in the compact control cards and leaves
+   controls needlessly narrow after the layout collapses to one column. */
+.input-panel .shiny-input-container,
+.stability-controls .shiny-input-container {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.input-pair > .shiny-input-container {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.input-panel .form-control,
+.input-panel .form-select,
+.stability-controls .form-control,
+.stability-controls .form-select {
+  width: 100%;
+  min-width: 0;
+}
+
+.input-panel .irs,
+.stability-controls .irs {
+  width: 100%;
+}
 
 .primary-action, .secondary-action {
   width: 100%;
@@ -216,7 +247,24 @@ a { color: var(--teal); }
 @media (max-width: 700px) {
   .app-shell { width: min(100% - 18px, 1480px); margin-top: 9px; }
   .hero-inner { min-height: 0; flex-direction: column; align-items: flex-start; padding: 30px 24px; }
+  .hero-inner h1 { font-size: clamp(2.05rem, 10vw, 3rem); }
   .runtime-badge { min-width: 0; width: 100%; }
   .input-pair, .metrics-grid, .workflow-grid { grid-template-columns: 1fr; }
   .input-panel, .content-card, .documentation-panel, .stability-controls { padding: 20px; border-radius: 16px; }
+}
+
+@media (max-width: 520px) {
+  .main-nav-wrap > .card > .card-header,
+  .main-nav-wrap > .bslib-card > .card-header {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 16px;
+  }
+
+  .main-nav-wrap .nav {
+    min-width: max-content;
+    flex-wrap: nowrap;
+  }
+
+  .main-nav-wrap .nav-link { padding-inline: 14px; }
 }
