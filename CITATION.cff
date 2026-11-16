@@ -3,10 +3,16 @@ message: "If you use this software, please cite the software and the MuMag2022 p
 title: "MuMag2022 Python"
 type: software
 version: 0.1.0
+date-released: 2026-11-16
 authors:
   - family-names: Adams
     given-names: Michael P.
     orcid: "https://orcid.org/0000-0001-9269-8087"
+abstract: >-
+  MuMag2022 Python is a tested, browser-accessible implementation for fitting
+  field-dependent unpolarized magnetic small-angle neutron-scattering data in
+  the approach-to-saturation regime. It provides exchange-stiffness profiling,
+  uncertainty-aware residual analysis, and numerical stability diagnostics.
 repository-code: "https://github.com/AdamsMP92/MuMag2022_python"
 url: "https://adamsmp92.github.io/MuMag2022_python/"
 license: MIT

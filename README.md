@@ -80,6 +80,14 @@ neglects chiral terms. A numerically successful fit does not establish these
 physical assumptions; the stability and residual diagnostics are intended to
 make their consequences visible.
 
+## Citation
+
+When using MuMag2022 Python in research, please cite the exact software
+version and the associated 2022 *Journal of Applied Crystallography* article.
+GitHub exposes the software citation from [`CITATION.cff`](CITATION.cff); a
+version-specific DOI will be provided by the Zenodo archive linked to the
+corresponding GitHub release.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

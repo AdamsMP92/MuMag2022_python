@@ -24,6 +24,7 @@ dependencies = ["numpy>=1.26", "scipy>=1.11", "matplotlib>=3.8"]
 Homepage = "https://adamsmp92.github.io/MuMag2022_python/"
 Repository = "https://github.com/AdamsMP92/MuMag2022_python"
 Issues = "https://github.com/AdamsMP92/MuMag2022_python/issues"
+Changelog = "https://github.com/AdamsMP92/MuMag2022_python/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 test = ["pytest>=8"]
